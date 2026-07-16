@@ -54,7 +54,9 @@ PART II: Resource Utilization Report
 <img width="571" height="320" alt="Screenshot 2026-07-15 at 10 01 54 PM" src="https://github.com/user-attachments/assets/f5762986-7914-428a-a60e-7b69e63453ae" />  
 
 
-In this design, 70 Total logic elements and 19 flip-flops were used.
-Challenges/Conclusion
+In this design, 70 Total logic elements and 19 flip-flops were used.  
+
+Challenges/Conclusion  
+
 In this lab, the hardest part was writing, creating the data path, and implementing it with code. In this lab, we showed a sequential design on the DE10-Lite FPGA by implementing both behavioral memory modules and an efficient computation circuit. In Part I, the correct configuration and synthesis of dual 16x4 RAM modules verified the effective utilization and initialization of the FPGA's dedicated M9K memory blocks. Finally, the integration of these memory components with the custom datapath and Finite State Machine in Part II validated the hardware's capability to accurately compute and display integer square roots via consecutive odd-integer subtraction.
 
