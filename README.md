@@ -1,3 +1,5 @@
+# Sequential System Design With RAM  
+
 State Diagram  
 <img width="629" height="418" alt="Screenshot 2026-07-15 at 9 59 16 PM" src="https://github.com/user-attachments/assets/14b706e6-e2f5-4443-ab1a-389d332ffb54" />
 
@@ -12,11 +14,8 @@ In the design, SW[3:0] provides the 4-bit input data (Data_In), and SW[7:4] spec
 To create two 16x4 RAM modules, two RAMs were instantiated to create RAM0 and RAM1. The RAMs had the same clock, address, and mdi, but had different Write enables and mdo. The write enable for the RAMs was respectively defined as mwr0 and mrw1. When SW[8] was high, that meant to write to RAM1, and when SW[8] was low, that meant to write to RAM0. The memory write enable for RAM0 was set high when (WE & !SW[8]). The memory write enable for RAM1 was set high when (WE & SW[8]). 
 
 To test this design, a mif file was used to upload preset values to addresses in RAM0 and RAM1. The design was verified and had correct functionality for RAM0 and RAM1.  
+  
 <img width="448" height="118" alt="Screenshot 2026-07-15 at 10 00 11 PM" src="https://github.com/user-attachments/assets/3ae82399-42dd-478d-9a15-708eb95abe45" />
-
-
-
-
 The design used 2 M9K blocks as expected.
 
 
