@@ -16,6 +16,7 @@ To create two 16x4 RAM modules, two RAMs were instantiated to create RAM0 and RA
 To test this design, a mif file was used to upload preset values to addresses in RAM0 and RAM1. The design was verified and had correct functionality for RAM0 and RAM1.  
   
 <img width="448" height="118" alt="Screenshot 2026-07-15 at 10 00 11 PM" src="https://github.com/user-attachments/assets/3ae82399-42dd-478d-9a15-708eb95abe45" />  
+
 The design used 2 M9K blocks as expected.
 
 
