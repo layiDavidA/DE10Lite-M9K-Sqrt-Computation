@@ -22,6 +22,9 @@ The design used 2 M9K blocks as expected.
 
 
 Part II: Integer Square Root Computation  
+<img width="447" height="166" alt="Screenshot 2026-07-18 at 5 13 52 PM" src="https://github.com/user-attachments/assets/31a77c58-a470-45f5-ab61-61f78133e3d3" />  
+
+
 
 Part two of this lab focused on designing and implementing a circuit that can do square root computation. The design took in an 8-bit binary number (N) and used a custom memory, datapath, and FSM to compute square roots. Since division and multiplication are very complicated, the square root computation was done by the method of subtracting consecutive odd integers. The design had 4 main components, which included the register of N, the subtractor, the adder, and the FSM.  
 
@@ -44,6 +47,9 @@ In a top-level file, the N-register, subtractor, adder, and FSM were connected t
 
 
 To finish this design, the RAM module in Part I was changed from 16x4 to 16x8 and used with an MIF file to store test cases for our design. In another top level file, the Start signal (St) was connected to KEY[1], the Reset was connected to KEY[0], the Done signal was connected to LEDR[0], the input value (N) was connected to HEX 2 and HEX 1, the address value was connected to HEX5, and the final square root output was connected to HEX 0. The RAM’s output was wired to the square root’s input value. The RAM is incremented using the St and is connected to the Square root via the DE10-LITE clock.  
+<img width="424" height="240" alt="Screenshot 2026-07-18 at 5 13 34 PM" src="https://github.com/user-attachments/assets/3e90339c-f035-476c-8372-05bc8eb172a4" />  
+
+
 <img width="362" height="280" alt="Screenshot 2026-07-15 at 10 01 36 PM" src="https://github.com/user-attachments/assets/75f4a356-f9e8-4847-8cca-380bf4215b92" />  
 
 
